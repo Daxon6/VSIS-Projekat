@@ -1,0 +1,41 @@
+form{
+    margin: auto;
+    width: 900px;
+    height: 85%;
+    background-color: #eee;
+    font-weight: bold;
+    color: #7D9D9C;
+    padding: 20px;
+    border: solid #aaa;
+}
+
+form > input, form>button, form>label, form>textarea{
+    width: 96%;
+    height: 30px;
+    box-sizing:border-box;
+}
+
+form>textarea{
+    height: 80px;
+}
+
+button{
+    background-color: black;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    height: 25px;
+}
+
+
+button:hover{
+    background-color: grey;
+    color: lavender;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+button:active{
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
