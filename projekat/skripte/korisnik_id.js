@@ -50,6 +50,19 @@ $(function() {
         }
     });
 
+    function toggleLokacije() {
+        if ($('#uloge').val() === 'blagajnik') {
+            $('#lokacije').show();
+        } else {
+            $('#lokacije').hide();
+        }
+    }
+
+    toggleLokacije();
+
+    $('#uloge').on('change', function () {
+        toggleLokacije();
+    });
 
     $('#forma').on('submit', function (e) {
         e.preventDefault();
