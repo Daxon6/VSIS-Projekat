@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+  <meta name="apitoken" content="vmnNRdc9FVrg5mf15m6fLyhser4SNa5P9GteU2WcAjOq2Tj4BuhJLBtAGeUQvyY6MRDfvqH7gqT4eSkrfNz9uZnYPy">
+  <title>Registracija</title>
+
+  <link rel="stylesheet" href="stilovi/registracija.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <script src="skripte/registracija.js"></script>
+
+
+
+</head>
+<body>
+<h1>Registracija korisnika</h1>
+
+<div id="container">
+  <div id="container_form">
+  <form id="forma" method="POST" action="https://vsis.mef.edu.rs/projekat/ulaznice/public_html/api/register">
+
+    <label for="imeprezime">Ime i prezime:</label>
+    <input type="text" id="imeprezime" placeholder="Ovde uneti ime i prezime" required minlength="5" maxlength="180">
+    <div id="provera_imeprezime" class="div_hidden" hidden></div>
+
+
+    <label for="telefon">Broj telefona:</label>
+    <input type="tel" id="telefon" placeholder="Ovde uneti broj telefona" required minlength="9" maxlength="14">
+    <div id="provera_telefon" class="div_hidden" hidden></div>
+
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Ovde unesite email">
+    <div id="provera_email" class="div_hidden" hidden></div>
+
+    <label for="lozinka">Lozinka:</label>
+    <input type="password" id="lozinka" placeholder="Ovde unesite lozinku" required>
+    <div id="provera_lozinka" class="div_hidden" hidden></div>
+
+    <label for="ponovljenalozinka">Ponovljena lozinka:</label>
+    <input type="password" id="ponovljenalozinka" placeholder="Ponovite lozinku" required>
+    <div id="provera_ponovljenalozinka" class="div_hidden" hidden></div>
+
+    <button type="submit" class="button">Registrujte se</button>
+    <div id="provera_registracija" class="div_hidden" hidden></div>
+
+  </form>
+  </div>
+</div>
+
+</body>
+</html>
